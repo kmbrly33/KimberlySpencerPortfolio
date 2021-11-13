@@ -1,0 +1,465 @@
+@font-face {
+  font-family: Calmer;
+  src: url(CalmerRegular.ttf);
+  font-family: Refira;
+  src: url(RefiraAsri2.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+body#home {
+  background-color: #dae2e3;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Navbar */
+#hamnav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  position: sticky;
+  justify-content: center;
+  font-family: Calmer;
+  background: transparent;
+}
+
+#hamitems {
+  display: flex;
+}
+
+#hamitems a {
+  text-align: center;
+}
+
+#hamitems a:hover {
+  border-bottom: 3px solid #ca95a0;
+}
+
+#hamnav label, #hamburger {
+  display: none;
+}
+
+#hamnav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8a93a1;
+  text-decoration: none;
+  padding: 0.5rem 5rem;
+}
+
+.btn {
+  font-family: Calmer;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  background: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #8a93a1;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  background: url("/dist/images/FreelaceGB.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  padding-top: 35%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero a {
+  color: #000;
+}
+
+.hero h1 {
+  font-family: Refira;
+  font-weight: bold;
+  font-size: 4.6rem;
+  color: #000;
+}
+
+.hero h2 {
+  font-family: Calmer;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #fff;
+  padding-top: 2.5rem;
+}
+
+.hero .btn:hover {
+  background-color: #b8c8df;
+}
+
+.gallery-text {
+  font-family: Calmer;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.gallery-text h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #8a93a1;
+  margin-top: 4rem;
+}
+
+.gallery-text p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+}
+.item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #ca95a0;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  transition: transform 2s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.item:hover:after {
+  transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+.item:hover .item-image {
+  transform: scale(1.2);
+}
+.item:hover .item-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+.item-image {
+  height: auto;
+  transform: translateZ(0);
+  display: block;
+  transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+.item-image:before {
+  content: "";
+  display: block;
+  padding-top: 46%;
+  overflow: hidden;
+}
+.item-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+.item-text {
+  position: absolute;
+  font-family: Calmer;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  transform: translateY(-20%);
+  transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+  transition-delay: 300ms;
+}
+.item-text-wrap {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.item-text-title {
+  font-size: 1.4rem;
+  padding: 0 1rem;
+  margin: 5px 0 0 0;
+  color: #fff;
+}
+.item-text-title a {
+  color: #fff;
+}
+
+#about {
+  margin-top: 8%;
+}
+
+.about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio";
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.bioimage {
+  height: 340px;
+  width: 280px;
+  border-radius: 50%;
+}
+
+.bio h2 {
+  font-family: Calmer;
+  font-size: 2.5rem;
+  color: #8a93a1;
+  padding-bottom: 1.2rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.bio p {
+  padding-left: 1rem;
+  width: 400px;
+  text-align: left;
+}
+
+.bio {
+  grid-template-areas: "bio";
+  border-left: 3px solid #ca95a0;
+}
+
+.contact-heading h2 {
+  font-family: Calmer;
+  font-size: 2rem;
+  color: #8a93a1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-heading p {
+  font-size: 1rem;
+  font-family: Calmer;
+  padding: 0.8rem 0;
+}
+
+#contact-form {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.text-fields {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message";
+  gap: 0.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.name-input {
+  grid-area: name;
+}
+
+.email-input {
+  grid-area: email;
+}
+
+.subject-input {
+  grid-area: subject;
+}
+
+.phone-input {
+  grid-area: phone;
+}
+
+.message-input {
+  grid-area: message;
+  height: 100px;
+}
+
+.text-input {
+  padding: 0.6rem 1rem;
+}
+
+#main-footer {
+  height: 40px;
+  width: 100%;
+  color: #000;
+  background: #dae2e3;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.social {
+  margin: 1rem;
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+  #hamnav {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #hamnav {
+    padding: 2rem;
+    justify-content: left;
+    align-content: left;
+    text-align: center;
+  }
+
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: #64748c;
+    font-style: normal;
+    font-size: 2.6rem;
+    padding: 10px;
+    align-content: left;
+    justify-content: left;
+    text-align: left;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+
+  .hero h1 {
+    font-family: Refira;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #000;
+    padding-top: 32%;
+  }
+
+  .hero h2 {
+    font-family: Calmer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    padding-top: 1.2rem;
+  }
+
+  .items {
+    margin-bottom: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-text {
+    padding-top: 1rem;
+  }
+
+  .gallery-text h2 {
+    margin-top: 1rem;
+  }
+
+  .about-info {
+    grid-template-areas: "bioimage" "bio";
+    overflow: hidden;
+    padding-bottom: 2rem;
+  }
+
+  .bio {
+    padding-top: 0.5rem;
+    border-left: none;
+    margin-bottom: 2rem;
+  }
+
+  .bio h2 {
+    text-align: center;
+  }
+
+  .bio p {
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  #contact-form {
+    margin: 1rem 0 2rem;
+  }
+
+  .text-fields {
+    display: grid;
+    grid-template-areas: "name " "email" "subject" "phone" "message";
+    justify-content: center;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+
+  .text-input {
+    padding: 0.7rem 3.5rem;
+  }
+
+  #main-footer {
+    margin-top: 5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

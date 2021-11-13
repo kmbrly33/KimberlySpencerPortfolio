@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.43.4"
+  },
+  "name": "sass_sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

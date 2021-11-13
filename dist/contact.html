@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+   
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Kimberly Spencer | Front-End Web Developer</title>
+  </head>
+  <body>
+      
+    <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger">        
+               <div id="hamitems">                
+                <a href="index.html">Home</a>
+                <a href="about.html" >About</a>
+                <a href="work.html">Work</a>
+
+                <a href="contact.html">Hire Me</a>
+                </div>
+        </nav>
+    
+      <section id="contact-form" class="text-center">
+          
+        <div class="container">
+            <div class="contact-heading">
+          <h2 class="contact">Contact Me</h2>
+          <p>I look forward to hearing from you</p>
+        </div>
+          <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <div class="text-fields">
+              <input
+                type="text"
+                class="text-input name-input"
+                placeholder="Name"
+                name="name"
+              />
+              <input
+                type="text"
+                class="text-input subject-input"
+                placeholder="Subject"
+                name="subject"
+              />
+              <input
+                type="email"
+                class="text-input email-input"
+                placeholder="Email Address"
+                name="email"
+              />
+              <input
+                type="phone"
+                class="text-input phone-input"
+                placeholder="Phone Number"
+                name="phone"
+              />
+              <textarea
+                type="message"
+                class="text-input message-input"
+                placeholder="Enter Your Message"
+                name="message"
+              ></textarea>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy 2021 All rights reserved</p>
+        <div class="social">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
