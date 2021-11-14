@@ -1,10 +1,10 @@
 
 @font-face {
   font-family: Calmer;
-  src: url(CalmerRegular.ttf);
+  src: url("../css/CalmerRegular.ttf");
 
   font-family: Refira;
-  src: url(RefiraAsri2.ttf);
+  src: url("../css/RefiraAsri2.ttf");
 } 
 
 * {
@@ -512,7 +512,7 @@ padding-left: 1rem;
 
 @media screen and (min-height: 812px) {
   .hero h1 {
-    padding-top: 50%;
+    padding-top: 53%;
     font-size: 3.8rem;
   }
 .hero h2 {
