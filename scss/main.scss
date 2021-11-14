@@ -390,9 +390,10 @@ padding-left: 1rem;
   #hamnav {
     padding: 0;
   }
+ 
 }
 
-@media screen and (max-width: 736px) { 
+@media screen and (max-width:800px) { 
  
  #hamnav {
    padding: 2rem;
@@ -514,19 +515,28 @@ padding-left: 1rem;
   } 
 }
 
+@media screen and (max-height: 568px) {
+.hero h1 {
+  font-size: 2.8rem;
+  padding-top: 20%;
+}
+}
+
+
 @media screen and (min-height: 812px) {
   .hero h1 {
-    padding-top: 55%;
-    font-size: 3.8rem;
+    padding-top:44%;
+    font-size: 3.4rem;
   }
 .hero h2 {
-  font-size: 1.1rem;
-  margin-top: 0.6rem;
+  font-size: 1.2rem;
+  margin-top: 4px;
 }
 .hero .btn {
-  margin-top: 0rem;
+  margin-top: 5px;
 }
  }
+
 
   
 
