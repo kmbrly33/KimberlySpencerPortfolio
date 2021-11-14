@@ -101,11 +101,13 @@ background: #8a93a1;
 .hero {
   height: 100%;
   width: 100%;
-  background-image: url("/dist/FreelaceGB.jpg");
+  background-image: url("../css/img/FreelaceGB.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;  
   background-attachment: fixed;
+  // margin: 0 auto;
+
 }
 
 .hero-text { 
