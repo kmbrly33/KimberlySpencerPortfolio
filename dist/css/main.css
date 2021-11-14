@@ -1,8 +1,8 @@
 @font-face {
-  font-family: Calmer;
-  src: url("../css/CalmerRegular.ttf");
+  font-family: "Calmer", sans-serif;
+  src: url("CalmerRegular.ttf");
   font-family: Refira;
-  src: url("../css/RefiraAsri2.ttf");
+  src: url("RefiraAsri2.ttf");
 }
 * {
   margin: 0;
@@ -13,6 +13,7 @@
 html, body {
   height: 100%;
   line-height: 1.5rem;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -51,9 +52,12 @@ ul li {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   justify-content: center;
-  font-family: Calmer;
+  font-family: "Calmer";
   background: transparent;
   position: relative;
 }
@@ -119,14 +123,14 @@ ul li {
 }
 
 .hero h1 {
-  font-family: Refira;
+  font-family: "Refira";
   font-weight: bold;
   font-size: 5.2rem;
   color: #000;
 }
 
 .hero h2 {
-  font-family: Calmer;
+  font-family: "Calmer";
   font-weight: bold;
   font-size: 1.6rem;
   color: #fff;
@@ -213,7 +217,7 @@ ul li {
 }
 .item-text {
   position: absolute;
-  font-family: Calmer;
+  font-family: "Calmer", sans-serif;
   text-transform: uppercase;
   top: 0;
   left: 0;
@@ -262,7 +266,7 @@ ul li {
 }
 
 .bio h2 {
-  font-family: Calmer;
+  font-family: "Calmer", sans-serif;
   font-size: 2.5rem;
   color: #8a93a1;
   padding-bottom: 1.2rem;
@@ -282,7 +286,7 @@ ul li {
 }
 
 .contact-heading h2 {
-  font-family: Calmer;
+  font-family: "Calmer", sans-serif;
   font-size: 2rem;
   color: #8a93a1;
   text-align: center;
@@ -394,7 +398,7 @@ ul li {
   }
 
   .hero h1 {
-    font-family: Refira;
+    font-family: "Refira", sans-serif;
     font-weight: bold;
     font-size: 3rem;
     color: #000;
@@ -402,7 +406,7 @@ ul li {
   }
 
   .hero h2 {
-    font-family: Calmer;
+    font-family: "Calmer", sans-serif;
     font-weight: bold;
     font-size: 1rem;
     color: #fff;
@@ -471,7 +475,7 @@ ul li {
 }
 @media screen and (min-height: 812px) {
   .hero h1 {
-    padding-top: 53%;
+    padding-top: 55%;
     font-size: 3.8rem;
   }
 
