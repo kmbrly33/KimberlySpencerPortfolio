@@ -99,7 +99,7 @@ ul li {
 .hero {
   height: 100%;
   width: 100%;
-  background: url("/dist/images/FreelaceGB.jpg");
+  background: url("/dist/img/FreelaceGB.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;

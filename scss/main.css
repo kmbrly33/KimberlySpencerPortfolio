@@ -14,6 +14,7 @@
 
 html, body {
   height: 100%;
+  line-height: 1.5rem;
 }
 
 img {
@@ -27,9 +28,16 @@ body#home {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 960px;
   margin: auto;
   height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
 }
 
 a {
@@ -59,6 +67,7 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: Calmer;
+  background: transparent;
 }
 
 #hamitems {
@@ -83,9 +92,9 @@ ul li {
   font-size: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: #8a93a1;
   text-decoration: none;
-  padding: 0 5rem;
+  padding: 0.5rem 5rem;
 }
 
 .btn {
@@ -105,7 +114,7 @@ ul li {
 .hero {
   height: 100%;
   width: 100%;
-  background: url("/dist/images/FreelaceGB.jpg");
+  background: url("/dist/FreelaceGB.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -113,7 +122,7 @@ ul li {
 }
 
 .hero-text {
-  padding-top: 24%;
+  padding-top: 35%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -130,7 +139,7 @@ ul li {
 .hero h1 {
   font-family: Refira;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4.6rem;
   color: #000;
 }
 
@@ -139,6 +148,7 @@ ul li {
   font-weight: bold;
   font-size: 1.6rem;
   color: #fff;
+  padding-top: 2.5rem;
 }
 
 .hero .btn:hover {
@@ -167,6 +177,7 @@ ul li {
 
 .gallery-text p {
   font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .items {
@@ -275,7 +286,7 @@ ul li {
 }
 
 .item-text-title {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 0 1rem;
   margin: 5px 0 0 0;
   color: #fff;
@@ -286,19 +297,12 @@ ul li {
 }
 
 #about {
-  margin-top: 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  margin-top: 8%;
 }
 
 .about-info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
       grid-template-areas: 'bioimage bio';
   gap: 2rem;
   -webkit-box-align: center;
@@ -307,48 +311,32 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
 }
 
-.about-me {
-  font-family: Calmer;
-  font-size: 2rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-img.bioimage {
-      grid-template-areas: "bioimage";
-  width: 300px;
+.bioimage {
+  height: 340px;
+  width: 280px;
   border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.bio h2 {
+  font-family: Calmer;
+  font-size: 2.5rem;
+  color: #8a93a1;
+  padding-bottom: 1.2rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.bio p {
+  padding-left: 1rem;
+  width: 400px;
+  text-align: left;
 }
 
 .bio {
       grid-template-areas: "bio";
-  padding: 3rem 1rem 1rem;
   border-left: 3px solid #ca95a0;
-  width: 500px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-.bio p {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: auto;
 }
 
 .contact-heading h2 {
@@ -362,7 +350,7 @@ img.bioimage {
 .contact-heading p {
   font-size: 1rem;
   font-family: Calmer;
-  padding-bottom: 1rem;
+  padding: 0.8rem 0;
 }
 
 #contact-form {
@@ -370,16 +358,12 @@ img.bioimage {
   margin-top: 8%;
 }
 
-#contact-form .container {
-  width: 860px;
-}
-
 .text-fields {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "name email" "subject phone" "message message";
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 .name-input {
@@ -419,7 +403,7 @@ img.bioimage {
 }
 
 #main-footer {
-  height: 38px;
+  height: 40px;
   width: 100%;
   color: #000;
   background: #dae2e3;
@@ -429,11 +413,12 @@ img.bioimage {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   text-align: center;
-  padding-top: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+.social {
+  margin: 1rem;
 }
 
 /* Mobile */
@@ -488,20 +473,21 @@ img.bioimage {
   .hero h1 {
     font-family: Refira;
     font-weight: bold;
-    font-size: 3.8rem;
+    font-size: 3rem;
     color: #000;
-    padding-top: 27%;
+    padding-top: 32%;
   }
   .hero h2 {
     font-family: Calmer;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #fff;
+    padding-top: 1.2rem;
   }
   .items {
+    margin-bottom: 3rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    gap: 1rem;
   }
   .gallery-text {
     padding-top: 1rem;
@@ -510,31 +496,40 @@ img.bioimage {
     margin-top: 1rem;
   }
   .about-info {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
         grid-template-areas: 'bioimage' 'bio';
+    overflow: hidden;
+    padding-bottom: 2rem;
   }
   .bio {
-    gap: 0;
+    padding-top: 0.5rem;
     border-left: none;
-    padding-top: 0;
-    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
-  .bio p {
-    width: 375px;
+  .bio h2 {
     text-align: center;
   }
-  .bioimage {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    grid-row: 1 / -1;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+  .bio p {
+    padding: 0 2rem;
+    text-align: center;
   }
-  img {
-    display: block;
-    margin: 0 auto;
+  #contact-form {
+    margin: 1rem 0 2rem;
+  }
+  .text-fields {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'name ' 'email' 'subject'  'phone' 'message';
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+  .text-input {
+    padding: 0.7rem 3.5rem;
+  }
+  #main-footer {
+    margin-top: 5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
