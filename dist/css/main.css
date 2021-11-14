@@ -55,6 +55,7 @@ ul li {
   justify-content: center;
   font-family: Calmer;
   background: transparent;
+  position: relative;
 }
 
 #hamitems {
@@ -107,10 +108,10 @@ ul li {
 }
 
 .hero-text {
-  padding-top: 37%;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 31.5%;
 }
 
 .hero a {
@@ -120,7 +121,7 @@ ul li {
 .hero h1 {
   font-family: Refira;
   font-weight: bold;
-  font-size: 4.8rem;
+  font-size: 5rem;
   color: #000;
 }
 
@@ -129,7 +130,7 @@ ul li {
   font-weight: bold;
   font-size: 1.6rem;
   color: #fff;
-  padding-top: 2.5rem;
+  padding-top: 2.7rem;
 }
 
 .hero .btn:hover {
@@ -354,12 +355,13 @@ ul li {
     padding: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 736px) {
   #hamnav {
     padding: 2rem;
     justify-content: left;
     align-content: left;
     text-align: center;
+    margin-bottom: 1rem;
   }
 
   #hamitems a {
@@ -396,21 +398,21 @@ ul li {
     font-weight: bold;
     font-size: 3rem;
     color: #000;
-    padding-top: 32%;
+    padding-top: 30%;
   }
 
   .hero h2 {
     font-family: Calmer;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
-    padding-top: 1.2rem;
+    padding-top: 1.4rem;
   }
 
   .hero .btn {
-    padding: 5px 15px;
+    padding: 8px 13px;
     border-radius: 2px;
-    margin-top: 0.3rem;
+    margin-top: 0.2rem;
   }
 
   .items {
@@ -465,6 +467,21 @@ ul li {
 
   #main-footer {
     margin-top: 5rem;
+  }
+}
+@media screen and (min-height: 812px) {
+  .hero h1 {
+    padding-top: 50%;
+    font-size: 3.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+    margin-top: 0.6rem;
+  }
+
+  .hero .btn {
+    margin-top: 0rem;
   }
 }
 
